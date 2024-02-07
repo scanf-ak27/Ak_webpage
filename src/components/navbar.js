@@ -30,22 +30,22 @@ const Navbar = () => {
     <div className={color ? "header header-bg":"header"}>
         <Link to="/">
             <h1>
-                Webpages
+                Welcome !
             </h1>
         </Link>
     <ul className={click ? "nav-menu active" :
   "nav-menu"}>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/">HOME</Link>
       </li>
       <li>
-        <Link to="/project">Project</Link>
+        <Link to="/project">PROJECTS</Link>
       </li>
       <li>
-        <Link to="/about">about</Link>
+        <Link to="/about">ABOUT</Link>
       </li>
       <li>
-        <Link to="/contact">contact</Link>
+        <Link to="/contact">CONTACT</Link>
       </li>
     </ul>
     <div className="hamburger" onClick={handClick}>

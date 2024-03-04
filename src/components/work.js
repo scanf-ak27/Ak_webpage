@@ -15,7 +15,7 @@ export const work = () => {
               imgsrc={val.imgsrc}
               title={val.title}
               text={val.text}
-              view={val.text}
+              view={val.view}
               />
             )
           })}

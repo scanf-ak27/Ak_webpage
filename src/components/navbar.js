@@ -34,7 +34,7 @@ const Navbar = () => {
             </h1>
         </Link>
     <ul className={click ? "nav-menu active" :
-  "nav-menu"}>
+   "nav-menu"}>
       <li>
         <Link to="/">HOME</Link>
       </li>
@@ -54,8 +54,8 @@ const Navbar = () => {
       }/>)}
     
     </div>
+  
     </div>
-
   )
 }
 

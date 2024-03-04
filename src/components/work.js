@@ -1,23 +1,26 @@
 import './work.css'
- import React from 'react'
- import p1 from "../Assets/p1.jpg"
-import { NavLink } from 'react-router-dom'
- export const Work = () => {
-   return <div className="work-container">
+import React from 'react'
+
+import Workcard from './workcard'
+import Workcarddata from './workcarddata'
+export const work = () => {
+   return (
+   <div className="work-container">
         <h1 className="project-heading">Projects</h1>
         <div className="project-container">
-          <div className="project-card">
-           <img src={p1} alt="image1"/>
-              <h2 className='project-title'>Pro title</h2>
-            <div className='pro-detail'>
-                <p>This is description</p>
-              <div className='pro-btns'>
-                <NavLink to="github.com" className="btn">View</NavLink>
-                <NavLink to="github.com" className="btn">Source</NavLink>
-              </div>
-            </div>
-          </div>
+          {Workcarddata.map((val, ind) => {
+            return(
+              <Workcard
+              key={ind}
+              imgsrc={val.imgsrc}
+              title={val.title}
+              text={val.text}
+              view={val.text}
+              />
+            )
+          })}
         </div>
      </div>
+   );
  };
- export default Work;
+ export default work;
